@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>As, <?php print "Antradienis "."ir PHP"; ?></title>
+        <title>As, <?php print " " . date("l")." ir PHP"; ?></title>
         <meta charset="UTF-8">
     </head>
     <body>
