@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>As, <?php print " " . date("l")." ir PHP"; ?></title>
+        <title>As, <?php print date("l", strtotime("2019-04-16 + 1 day")) . " ir PHP"; ?></title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1>Oskaras - HTML
-            <?php print("ir PHP"); ?>
-            asas jau nuo
-            <?php print" 2019 metu "?>
+        <h1>Oskaras
+            <?php print" PHP su manim buvo ir "; ?>
+            <?php print date("G", strtotime("5 -1")) . "valanda!" ?>
         </h1>
         <p>
             Viskas prasidejo
-            <?php print(date("m") . " menesio, " . date("d") . " diena!"); ?>
+            <?php print date("m", strtotime(2019 + 1)) . " uz kalnu "; ?>
         </p>
     </body>
 </html><!-- alt + shift + f -->
