@@ -7,11 +7,11 @@
     <body>
         <h1>Oskaras
             <?php print" PHP su manim buvo ir "; ?>
-            <?php print date("G", strtotime("5 -1")) . "valanda!" ?>
+            <?php print date("G", strtotime("5 - 1")) . " valanda!" ?>
         </h1>
         <p>
             Viskas prasidejo
-            <?php print date("m", strtotime(2019 + 1)) . " uz kalnu "; ?>
+            <?php print date("Y", strtotime("2019 + 1 year")) . " uz kalnu "; ?>
         </p>
     </body>
 </html><!-- alt + shift + f -->
