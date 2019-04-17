@@ -1,7 +1,7 @@
 <?php
-    $taken = rand(1, 100);
-    $return_one = rand(101, 200);
-    $return_two = rand(301, 400);
+$taken = rand(1, 100);
+$return_one = rand(101, 200);
+$return_two = rand(301, 400);
 ?>
 <!DOCTYPE html>
 <html>
