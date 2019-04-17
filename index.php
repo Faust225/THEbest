@@ -54,7 +54,7 @@
         $bulas = true;
         $nera = null;
         
-        print $string . "<br>" . "$integer intas <br>" . "$floatas floatas <br>" . "$bulas bool <br>" . "$nera null <br>";
+        print "$string stringas" . "<br>" . "$integer intas <br>" . "$floatas floatas <br>" . "$bulas bool <br>" . "$nera nullas <br>";
         ?>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
