@@ -21,7 +21,7 @@
             <?php // As toks vienisas jaunas paragrafas... ?>
         </p>
         <p>
-            <?php // Mindaugo svetimo kodo gatves... ?>
+            <?php // Mindaugo svetimo kodo gatves d... ?>
         </p>
 
         <!-- Task 9 -->
