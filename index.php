@@ -45,7 +45,7 @@
         ?>
         <br>
         <?php print date("s");?>
-        
+        <br>
         <!-- Values -->
         <?php print "<br>"; 
         $string = 'dadwwad';
@@ -54,7 +54,7 @@
         $bulas = true;
         $nera = null;
         
-        print $string . " $integer" . " $floatas" . " $bulas" . " $nera";
+        print $string . "<br>" . "$integer intas <br>" . "$floatas floatas <br>" . "$bulas bool <br>" . "$nera null <br>";
         ?>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
