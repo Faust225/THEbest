@@ -30,14 +30,18 @@
         <?php
         
         // task 10 and 11
-        $imgWidth = 5 + date("s") + 300;
-        $imgHeight = 5 + date("s") + 250;
+        $imgWidth = idate("s") + 300;
+        $imgHeight = idate("s") + 250;
 
-        if (idate("s") != 0) {
-            print "<img src=\"bomb.jpg\" width=\" $imgWidth \" height=\" $imgHeight \">";
-        } else {
-            print "<img src=\" explosion.jpg \">";
-        }
+        if (idate("s") != 0) { 
+        ?>
+           <img src="bomb.jpg" width=" <?php print $imgWidth; ?> " height=" <?php print $imgHeight; ?>">
+        <?php
+            } else {
+        ?>
+                    <img src="explosion.jpg">
+        <?php
+                    }
         ?>
         <br>
         <?php print date("s"); ?>
