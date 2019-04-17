@@ -44,6 +44,16 @@
                     }
         ?>
         <br>
-        <?php print date("s"); ?>
+        <?php print date("s");?>
+        
+        <?php print "<br>"; 
+        $string = 'dadwwad';
+        $integer = 26;
+        $floatas = 56.88;
+        $bulas = true;
+        $nera = null;
+        
+        print $string . " $integer" . " $floatas" . " $bulas" . " $nera";
+        ?>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
