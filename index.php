@@ -46,6 +46,7 @@
         <br>
         <?php print date("s");?>
         
+        <!-- Values -->
         <?php print "<br>"; 
         $string = 'dadwwad';
         $integer = 26;
