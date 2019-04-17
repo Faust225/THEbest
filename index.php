@@ -51,10 +51,20 @@
         $string = 'dadwwad';
         $integer = 26;
         $floatas = 56.88;
-        $bulas = true;
+        $bulas = false;
         $nera = null;
         
-        print "$string stringas" . "<br>" . "$integer intas <br>" . "$floatas floatas <br>" . "$bulas bool <br>" . "$nera nullas <br>";
+        print "$string stringas <br>" 
+              . "$integer intas <br>" 
+              . "$floatas floatas <br>" 
+              . "$bulas boolas <br>" 
+              . "$nera nullas <br>";
+        $imgLoc = "explosion.jpg";
         ?>
+        
+        <img src="<?php print $imgLoc?>">
+        <img src="<?php print $imgLoc?>">
+        <img src="<?php print $imgLoc?>">
+        <img src="<?php print $imgLoc?>">
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
