@@ -1,18 +1,31 @@
 <?php
-$taken = rand(1, 100);
-$return_one = rand(101, 200);
-$return_two = rand(301, 400);
+
+function reached() {
+    $siuskles_turis = 40;
+    $siuskliu_turis_avg_per_day = 15;
+    $max_kaupo_turis = rand(1, 10);
+
+    $limit = ($max_kaupo_turis + $siuskles_turis); // max limit 
+    $after_days = floor(($max_kaupo_turis + $siuskles_turis) / $siuskliu_turis_avg_per_day); // number of days to throw trash
+    $thrash_per_days = $after_days * $siuskliu_turis_avg_per_day; // thresh count after days
+    $space_left = $limit - $thrash_per_days; // free space left
+
+    if ($space_left > 0) {
+        print "Po $after_days d. prisirinko $thrash_per_days of $limit ";
+    } else {
+        print"Po $after_days dienu " . date("Y-m-d", strtotime("+ $after_days day"))
+                . " pirk geliu ir sampano, jeigu nori, kad zmona siuksles pati isnestu"
+                . ", nes prisirinko $thrash_per_days of $limit";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Skolos skaiciuokle</title>
+        <title>Siuksles</title>
         <meta charset="UTF-8">
     </head>
     <body>
-        <h1>Skolos skaiciuokle</h1>
-        <h3>Jei paemei <?php print $taken; ?> EU</h3>
-        <h3>Su dviem kabanciais grazinsi <?php print $return_two; ?></h3>
-        <h3>Su vienu kabanciu grazinsi <?php print $return_one; ?></h3>
+        <?php reached(); ?>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
