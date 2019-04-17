@@ -1,26 +1,42 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>As, <?php // Komentarai
-        print date("l", strtotime("2019-04-16 + 1 day"))
-                . ' ir PHP'; ?>
+        <title><?php // Komentarai
+        date_default_timezone_set('Europe/Vilnius');
+
+        print 'PHP lydes ir ' . date( mt_rand(2000, 2029), date("Y"));
+         ?>
         </title>
         <meta charset="UTF-8">
     </head>
-    <body>
-      
-        <h1>  <?php // Dainu tekstai ?>
-            Oskaras -
-            <?php print" PHP su manim buvo ir "; ?>
-            <?php print date("G", strtotime("5 - 1")) . ' valanda!' ?>
+    <body style="background: rgb<?php print  '('. (rand(0, 255)) . ',' . (rand(0, 255)) . ',' . (rand(0, 255)). ')' . ';'; ?>">
+        <h1 style="font-size: <?php print rand(16, 30) . 'px;'; ?>">
+            Oskaras - galbut turesiu
+            <?php print " " . rand(1, 5) . ' vaiku'; ?>
         </h1>
-        <h2> <?php // Paragrafo daina ?> </h2>
-        <p>
-            <?php print date("Y", strtotime(" + 1 year")) . ' uz kalnu '; ?>
-              <?php // As toks vienisas jaunas paragrafas... ?>
+        <p style="color: <?php print '#' . rand(100, 999) . ';'; ?>">
+            D. Trum'as nebebus prezidentu 
+            <?php
+                print date( mt_rand(2021, 2031), date("Y")) . '-' . date("m-d");  ?>
+            <?php // As toks vienisas jaunas paragrafas... ?>
         </p>
         <p>
-             <?php // Mindaugo svetimo kodo gatves... ?>
+            <?php // Mindaugo svetimo kodo gatves... ?>
         </p>
+        <img src="oneToSix/<?php print mt_rand(1, 6);?>.png"><br>
+        <?php
+        
+        $imgWidth = date("s")+ 300;
+        $imgHeight = date("s") + 250;
+        
+        if(idate("s") != 0){
+            print "<img src=\"bomb.jpg\" width=\" $imgWidth \" height=\" $imgHeight \">";
+        }
+        else {
+             print "<img src=\" explosion.jpg \">";
+        }
+        ?>
+        <br>
+        <?php print date("s");?>
     </body>
-</html><!-- alt + shift + f -->
+</html><!-- alt + shift + f   oskarShop.lt-->
