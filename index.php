@@ -23,10 +23,13 @@ $grizai_isgeres = rand(0, 1);
 
 if($grizai_velai == 1 && $grizai_isgeres == 1) {
     $late_return = 'miegosi and sofos, nes grizai velai ir isgeres ';
+    
 } elseif ($grizai_velai == 0) {
     $late_return = 'niemiegosi ant sofos nes negrizai velai';
+    
 } elseif ($grizai_isgeres == 0) {
     $late_return = 'nemiegosi and sofos nes negrizai isgeres';
+    
 } elseif ($grizai_isgeres == 0 && $grizai_velai == 0) {
     $late_return = 'Nemiegosi ant sofos, nieko nepadarei';
 }
