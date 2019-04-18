@@ -4,8 +4,18 @@ $consumption = 7.5; // for 100 km
 $price = 1.3; // EU for L
 $money_in_hands = 100;
 
-$used_fuel = ($distance * $consumption) / 100;
-$trip_price = $used_fuel * $price;
+$used_fuel = round($distance * $consumption / 100, 2);
+$trip_price = round($used_fuel * $price, 2);
+
+$text = "Nuvaziavus $distance km "
+        . "masina sunaudos $used_fuel l kuro "
+        . "kaina: $trip_price EU";
+
+if ($money_in_hands >= $trip_price) {
+    $text_2 = 'Ok';
+} else {
+    $text_2 = ' Not ok';
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,15 +24,6 @@ $trip_price = $used_fuel * $price;
         <meta charset="UTF-8">
     </head>
     <body>
-        <?php print 'Nuvaziavus ' . $distance . ' km ' .
-                'masina sunaudos ' . round($used_fuel, 2) . ' l kuro ' .
-                'kaina: ' . round($trip_price, 2) . ' EU';
-        if($money_in_hands >= $trip_price) {
-            print ' enought money for trip';
-        }
-        else {
-            print ' not enought money';
-        }
-?>
+        <p><?php print $text . " $text_2"; ?></p>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
