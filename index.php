@@ -16,6 +16,20 @@ if ($money_in_hands >= $trip_price) {
 } else {
     $text_2 = ' Not ok';
 }
+
+// Sofa 
+$grizai_velai = rand(0, 1);
+$grizai_isgeres = rand(0, 1);
+
+if($grizai_velai == 1 && $grizai_isgeres == 1) {
+    $late_return = 'miegosi and sofos, nes grizai velai ir isgeres ';
+}
+elseif ($grizai_velai == 0) {
+    $late_return = 'niemiegosi ant sofos nes negrizai velai';
+}
+elseif ($grizai_isgeres == 0) {
+    $late_return = 'nemiegosi and sofos nes negrizai velai';
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,5 +39,6 @@ if ($money_in_hands >= $trip_price) {
     </head>
     <body>
         <p><?php print $text . " $text_2"; ?></p>
+        <h1><?php  print $late_return;?><h1>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
