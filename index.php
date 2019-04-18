@@ -28,7 +28,10 @@ elseif ($grizai_velai == 0) {
     $late_return = 'niemiegosi ant sofos nes negrizai velai';
 }
 elseif ($grizai_isgeres == 0) {
-    $late_return = 'nemiegosi and sofos nes negrizai velai';
+    $late_return = 'nemiegosi and sofos nes negrizai isgeres';
+}
+elseif ($grizai_isgeres == 0 && $grizai_velai == 0) {
+    $late_return = 'Nemiegosi ant sofos, nieko nepadarei';
 }
 ?>
 <!DOCTYPE html>
