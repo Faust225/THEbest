@@ -51,7 +51,10 @@ if ($eggs == 1) {
         </style>
     </head>
     <body>
-        
+        <header>
+		<h1>Contact The Best</h1>
+		<?php include 'nav.php'; ?>
+	</header>
         <!-- THEbest start Oskaras index.php -->
         <h1>THEbest</h1>
         <div class="easter_img"></div>
