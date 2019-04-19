@@ -12,6 +12,11 @@
                 position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 100vh;
+                color: #fff;
             }
            
         </style>
@@ -19,6 +24,6 @@
     
     <body>
         <!-- THEbest start Oskaras index.php -->
-        <div class="all_index">dawdwa</div>
+        <div class="all_index"><h1>THEbest</h1></div>
     </body>
 </html><!-- alt + shift + f   oskarShop.lt-->
